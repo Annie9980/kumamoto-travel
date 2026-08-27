@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+:root { --background: #f5f2eb; --foreground: #18352c; }
+@theme inline { --color-background: var(--background); --color-foreground: var(--foreground); --font-sans: var(--font-geist-sans); --font-mono: var(--font-geist-mono); }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif; }
+.brand-mark { display:flex; align-items:center; justify-content:center; width:38px; height:38px; border-radius:50%; background:#bb7654; color:#fff; font-family: Georgia, serif; font-size:21px; font-weight:700; }
+.hero-orb { display:flex; align-items:center; justify-content:center; width:106px; height:106px; border-radius:50%; color:#fff; text-align:center; font-family:Georgia, serif; font-size:14px; line-height:1.55; box-shadow:0 12px 22px rgba(51,81,65,.14); }
+.orb-one { background:#718e7b; transform:rotate(-8deg); }
+.orb-two { width:126px; height:126px; background:#c68b6b; transform:translateY(-22px) rotate(7deg); }
+.orb-three { background:#a0ad8b; transform:rotate(-5deg); }
+@media (max-width: 640px) { .hero-orb { width:82px; height:82px; font-size:12px; } .orb-two { width:98px; height:98px; } }
